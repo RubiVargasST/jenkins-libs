@@ -19,13 +19,13 @@ def call(Map params){
             
             stage('Build Stage') {
                 steps {
-                    // script {
+                     script {
                         echo "[+] ---> Building ${params.main}"
                     //     docker_image = docker.build(
                     //         "${params.Repo}:${params.Tag}",
                     //         "-f ${params.Dockerfile} ${params.DockerfileContext}"
                     //     )
-                    // }
+                    }
                 }
             }
             
